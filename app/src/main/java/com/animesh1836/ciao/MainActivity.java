@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.animesh1836.ciao.Fragments.ChatsFragment;
+import com.animesh1836.ciao.Fragments.ProfileFragment;
 import com.animesh1836.ciao.Fragments.UsersFragment;
 import com.animesh1836.ciao.Model.User;
 import com.bumptech.glide.Glide;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPagerAdapter.addFragment(new ChatsFragment(), "Chats");
         viewPagerAdapter.addFragment(new UsersFragment(),"Users");
+        viewPagerAdapter.addFragment(new ProfileFragment(),"Profile");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }
